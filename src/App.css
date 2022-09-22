@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #ffffff;
+  --object-background: #1f3778;
+  --headings: #2932d9;
+  --object-background-2:#1f3778;
+}
+
+.App {
+  background: #ececec;
+}
+
+/* Headings */
+
+.Headings {
+  color: var(--headings);
+  background-image: -webkit-linear-gradient(90deg, var(--headings), var(--text-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  position: relative;
+  display: inline-block;
+}
+
+.Headings::after {
+  content: '';
+  background-color: var(--object-background);
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 7px;
+  border-bottom: 5px solid var(--object-background);
+  border-radius: 100%;
+  transition: 0.5s;
+}
+@media only screen and (max-width:768px){
+  h1{
+    font-size: 2.7em !important;
+  }
+}
+@media only screen and (max-width:425px){
+  h1{
+    font-size: 2.3em !important;
+  }
+}
+.main_heading{
+  color : var(--object-background)
+}
+/* Paragraph */
+
+.ParaGraph{
+  
+}
+
+/* Scrollbar */
+
+
+::-webkit-scrollbar{
+  width: 7px;
+  transition: 1s;
+}
+::-webkit-scrollbar-button{
+  height: 0px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--object-background);
+  transform: 0.5s;
+}
+::-webkit-scrollbar-thumb:active{
+  background-color: var(--object-background-2);
+}
+::-moz-scrollbar-button{
+  height: 0px;
+}
+::-moz-scrollbar{
+  width: 7px;
+  transition: 1s;
+}
+::-moz-scrollbar-thumb{
+  background-color: var(--object-background);
+}
+::-moz-scrollbar-thumb:active{
+  background-color: var(--object-background-2);
+}

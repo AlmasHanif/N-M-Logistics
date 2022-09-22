@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutSection {
+    /* position: absolute; */
+    background-image: url('../../Img/Warehouse.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+}
+
+.opacityBg {
+    background: rgba(42, 46, 42, 0.6);
+    height: 80vh;
+}
+
+.details {
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.h1 {
+    font-size: 4.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p {
+    font-size: 22px;
+    line-height: 2.5rem;
+}
+
+@media only screen and (max-width:470px){
+    .details{
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .details{
+        padding-top: 20px;
+    }
+}

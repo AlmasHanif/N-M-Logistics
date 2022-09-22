@@ -1,0 +1,59 @@
+.footer{
+    background-color: var(--text-color);
+}
+.iconDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.socialIcon{
+    font-size: 3.2em;
+    border: 1px solid var(--object-background-2);
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.5s;
+    color: var(--object-background-2);
+    font-weight: 900;
+}
+.socialIcon:hover{
+    background-color: var(--object-background-2);
+    cursor: pointer;
+    color: var(--text-color);
+    transform: rotate(360deg);
+}
+@media only screen and (max-width:425px){
+    .iconDiv{
+        width: 65%;
+    }
+}
+@media only screen and (max-width:320px){
+    .iconDiv{
+        width: 100%;
+    }
+}
+.Link{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+}
+.Link::after{
+    content: '';
+    background-color: var(--object-background-2);
+    width: 0;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 3px;
+    transition: 0.5s;
+}
+.Link:hover{
+    color: #000;
+}
+.Link:hover::after{
+    width: 100%;
+}

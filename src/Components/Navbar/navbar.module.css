@@ -1,0 +1,36 @@
+/* // Navbar */
+.Navbar {
+    width: 100%;
+    height: 50px !important;
+    align-items: center !important;
+}
+.Logo  {
+    width: 130px;
+    height: 70px;
+}
+
+.Link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(138, 134, 134);
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+}
+.Link::after{
+    content: '';
+    background-color: var(--object-background);
+    width: 0;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    transition: 0.5s;
+}
+.Link:hover{
+    color: var(--object-background);
+}
+.Link:hover::after{
+    width: 100%;
+}

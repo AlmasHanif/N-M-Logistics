@@ -1,0 +1,174 @@
+/* Button 1 */
+.btn1 {
+    padding: 10px 15px;
+    border: 1px solid var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: var(--text-color);
+    z-index: 1;
+    background: none;
+    position: relative;
+    font-weight: 1000;
+    font-size: 15px;
+    -webkit-box-shadow: 4px 8px 19px -3px var(--text-color);
+    box-shadow: 4px 8px 19px -3px var(--text-color);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.btn1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: var(--text-color);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px var(--text-color);
+    box-shadow: 4px 8px 19px -3px var(--text-color);
+    transition: all 250ms
+}
+
+.btn1 .btnIcon {
+    margin-left: 5px;
+}
+
+.btn1:hover {
+    color: var(--object-background-2);
+}
+
+.btn1:hover::before {
+    width: 100%;
+}
+
+/* Button 2 */
+
+.btn2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all .2s ease;
+    color: var(--object-background);
+}
+
+.btn2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    /* background: var(--object-background); */
+    width: 56px;
+    height: 56px;
+    transition: all 0.5s ease;
+}
+
+.btn2 span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    /* color: rgb(138, 134, 134); */
+    color: var(--text-color);
+
+}
+
+.ArrowIcon {
+    color: var(--text-color);
+    font-size: 2em;
+    font-weight: lighter;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.btn2:hover:before {
+    width: 100%;
+    background: var(--object-background);
+    /* color : var(--text-color) */
+}
+
+.btn2:hover .ArrowIcon {
+    transform: translateX(10px);
+}
+
+.btn2:active {
+    transform: scale(0.96);
+}
+
+/* Button 3 */
+/* From uiverse.io by @adamgiebl */
+.btn3 {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    text-decoration: none;
+    background: var(--object-background);
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: var(--text-color);
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+    transition: 0.7s;
+}
+
+.btn3 span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid var(--object-background);
+}
+
+.btn3 span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    transition: all 0.7s;
+}
+
+.btn3:hover span::before {
+    width: 100%;
+    background: transparent;
+}
+
+.btn3:active,.btn4:active {
+    transform: scale(0.90);
+}
+
+/* Button 4 */
+.btn4 {
+    border: 4px solid var(--object-background);
+    padding: 0.5em 2.4em;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: inset 11em 0 0 0 var(--object-background);
+    transition: 0.7s;
+}
+
+.btn4:hover {
+    box-shadow: inset 1em 0 0 0 var(--object-background);
+}

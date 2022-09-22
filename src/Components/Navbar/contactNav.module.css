@@ -1,0 +1,68 @@
+.contactLinks{
+    display: flex;
+    justify-content: space-between;
+    width: 22em;
+}
+.contactLinks div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.contactLinks div p{
+    margin: 0 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.contactLinks div i{
+    color: rgb(138, 134, 134);
+    font-size: 1.3em;
+}
+.socialLinks{
+    width: 10em;
+}
+.socialLinks i{
+    color: rgb(138, 134, 134);
+    font-size: 1.7em;
+    cursor: pointer;
+    transition: 0.5s;
+    background: none;
+    border: none;
+}
+.socialLinks i:hover{
+    color: var(--object-background);
+}
+@media only screen and (max-width:576px){
+    .contactLinks{
+        width: 17em;
+        justify-content: space-between;
+    }
+    .contactLinks div{
+        width: 40%;
+    }
+    .contactLinks div i{
+        font-size: 15px
+    }
+    .contactLinks div p{
+        font-size: 12px
+    }
+    .contactLinks div:nth-child(2) p{
+        font-size: 13px
+    }
+    .socialLinks{
+        width: 7em;
+    }
+    .socialLinks i{
+        font-size: 1.5em !important;
+    }
+}
+@media only screen and (max-width:450px){
+    .contactLinks{
+        flex-direction: column;
+        width: 10.5em;
+    }
+    .contactLinks div{
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
