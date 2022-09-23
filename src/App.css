@@ -6,13 +6,13 @@
 
 :root {
   --text-color: #ffffff;
-  --object-background: #1f3778;
+  --object-background: black;
   --headings: #2932d9;
   --object-background-2:#1f3778;
 }
 
 .App {
-  background: #ececec;
+  /* background: #ececec; */
 }
 
 /* Headings */

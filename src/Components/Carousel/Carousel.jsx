@@ -70,15 +70,19 @@ const Carousel = () => {
 
     return (
         <Slider className={`${styles.sliderBox}`} {...settings}>
+
             <div className={`${styles.slideItem} ${styles.slide1}`}>
-                <h1>By Ship</h1>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <div className={`${styles.btnDiv} container animate__animated animate__backInUp`}>
-                    <Link to={'/contact'} ><Btn4 btnName={'Contact Us'} /></Link>
-                    <Link to={'/service'} ><Btn4 btnName={'Our Service'} /></Link>
+                <div className={styles.opacityBg}>
+                    <h1>By Ship</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div className={`${styles.btnDiv} container animate__animated animate__backInUp`}>
+                        <Link to={'/contact'} ><Btn4 btnName={'Contact Us'} /></Link>
+                        <Link to={'/service'} ><Btn4 btnName={'Our Service'} /></Link>
+                    </div>
                 </div>
             </div>
             <div className={`${styles.slideItem} ${styles.slide2}`}>
+            <div className={styles.opacityBg}>
                 <h1>By Road</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <div className={`${styles.btnDiv} container animate__animated animate__backInUp`}>
@@ -86,12 +90,15 @@ const Carousel = () => {
                     <Link to={'/service'} ><Btn4 btnName={'Our Service'} /></Link>
                 </div>
             </div>
+            </div>
             <div className={`${styles.slideItem} ${styles.slide3}`}>
+            <div className={styles.opacityBg}>
                 <h1>By Air</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <div className={`${styles.btnDiv} container animate__animated animate__backInUp`}>
                     <Link to={'/contact'} ><Btn4 btnName={'Contact Us'} /></Link>
                     <Link to={'/service'} ><Btn4 btnName={'Our Service'} /></Link>
+                </div>
                 </div>
             </div>
         </Slider>

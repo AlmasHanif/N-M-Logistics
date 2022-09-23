@@ -1,3 +1,7 @@
+.contact-nav{
+    background-color: black !important;
+}
+
 .contactLinks{
     display: flex;
     justify-content: space-between;
@@ -13,16 +17,18 @@
     margin: 0 5px;
     font-size: 15px;
     font-weight: 500;
+    color: whitesmoke;
+
 }
 .contactLinks div i{
-    color: rgb(138, 134, 134);
+    color: whitesmoke;
     font-size: 1.3em;
 }
 .socialLinks{
     width: 10em;
 }
 .socialLinks i{
-    color: rgb(138, 134, 134);
+    color: whitesmoke;
     font-size: 1.7em;
     cursor: pointer;
     transition: 0.5s;

@@ -4,7 +4,7 @@ import styles from './contactNav.module.css'
 
 const ContactNav = () => {
     return (
-        <Navbar>
+        <Navbar className='bg-dark'>
             <Container>
                 <Navbar.Text>
                     <section className={`${styles.contactLinks} `}>
